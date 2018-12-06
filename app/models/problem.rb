@@ -1,4 +1,5 @@
 class Problem < ApplicationRecord
+  attr_accessor :quizHash
   has_one :category
   has_one :difficulty
   has_one :language
@@ -42,6 +43,6 @@ class Problem < ApplicationRecord
 
   def find_contributor
     User.all.find(self.contributor_id).username
-  end 
+  end
 
 end

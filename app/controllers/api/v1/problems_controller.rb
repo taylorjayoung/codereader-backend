@@ -1,6 +1,25 @@
 class Api::V1::ProblemsController < ApplicationController
   def index
-    @problems = Problem.all
+    @data = Problem.all
+    @problems = @data.map do |p|
+      {
+        id: p.id,
+        title: p.title,
+        contributor_id: p.contributor_id,
+        category_id: p.category_id,
+        language_id: p.language_id,
+        difficulty_id: p.difficulty_id,
+        created_at: p.created_at,
+        updated_at: p.created_at,
+        quiz: JSON.parse(p.quiz),
+        code: p.code,
+        description: p.description,
+        notes: p.notes,
+        prompt: p.prompt
+        }
+
+    end
+
     render(json: @problems, status: :ok)
   end
 
