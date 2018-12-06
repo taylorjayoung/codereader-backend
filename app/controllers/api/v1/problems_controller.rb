@@ -24,7 +24,7 @@ class Api::V1::ProblemsController < ApplicationController
   end
 
   def show
-    @problem = Stock.all.find(params[:id])
+    @problem = Problem.all.find(params[:id])
     render(json: @problem, status: :ok)
   end
 
@@ -33,7 +33,7 @@ class Api::V1::ProblemsController < ApplicationController
     if @problem.save
       render(json: @problem, status: :ok)
     else
-      render json: {message: 'yo dummy, wrong stuff'}
+      render json: {message: 'yo dummy'}
     end
   end
 
@@ -42,7 +42,7 @@ class Api::V1::ProblemsController < ApplicationController
     if @problem.save
       render(json: @problem, status: :ok)
     else
-      render json: {message: 'yo dummy, wrong shit'}
+      render json: {message: 'yo dummy'}
     end
   end
 
