@@ -54,7 +54,7 @@ GEM
       activesupport
     concurrent-ruby (1.1.4)
     crass (1.0.4)
-    erubi (1.7.1)
+    erubi (1.8.0)
     ffi (1.0.9)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -152,7 +152,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.3.8p459
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.6
