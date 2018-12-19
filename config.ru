@@ -3,3 +3,5 @@
 require_relative 'config/environment'
 
 run Rails.application
+
+export LDFLAGS="-L/usr/local/opt/libffi/lib"
