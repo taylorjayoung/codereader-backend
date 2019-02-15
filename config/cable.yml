@@ -8,10 +8,3 @@ production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
   channel_prefix: bit-book_production
-
-
-const a = "F7 C3 09 A7 C1 74 BA DE B1 88 92 40 0B B5 78 80 50 94 AA 0F"
-const b = "B6 13 2A 61 8F 9B E0 DA 8B C6 B5 A8 42 7C 20 BD 7D AE C1 4F 34 C0 A2 4C A4 2B 35 3B 3F F5 2F AB"
-
-console.log(a.split(" ").join(''))
-console.log(b.split(" ").join(''))
