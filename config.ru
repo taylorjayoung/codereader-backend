@@ -2,7 +2,7 @@
 
 require_relative 'config/environment'
 require 'rubygems'
-require 'dogapi'
+# require 'dogapi'
 
 run Rails.application
 # dog = Dogapi::Client.new('82725d971e848244ad25aa7c57676c4a', 'a6ec7d830db5b41968380360f3f4d02c2ee429d1')
