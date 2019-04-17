@@ -1,24 +1,27 @@
-# README
+# Study JavaScript Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application allows users to view and create collections resembling flashcards with questions and answers. Users can view collections to study JavaScript - functions, definitions, methods, data-structures, and algorithms.
 
-Things you may want to cover:
+## Contents
 
-* Ruby version
+- [Getting Started](#getting_started)
+- [Built With](#built_with)
+- [Versioning](#versioning)
+- [Deployment](#deployment)
 
-* System dependencies
+## Getting Started
 
-* Configuration
+Fork and clone this repository. `cd` into directory. Run `bundle install` for required gems. Run `rake db:migrate` to run table migrations. Use rails server command in terminal `rails s` to launch a web server to access application through web browser.
 
-* Database creation
+Ensure to run installation for frontend for full application: [Front-End](https://github.com/taylorjayoung/code-reader-front-end)
 
-* Database initialization
 
-* How to run the test suite
+## Versioning
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ruby version 2.5.1
+* Rails 5.2.2
 
-* Deployment instructions
 
-* ...
+## Deployment
+
+[Live on Heroku](https://codereader-backend.herokuapp.com//)
